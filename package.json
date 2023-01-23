@@ -16,7 +16,8 @@
     "test": "WATCH=true vitest",
     "test:ci": "yarn build -t node && vitest run",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -32,6 +33,7 @@
     "@storybook/testing-library": "^0.0.13",
     "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/typography": "^0.5.2",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@types/react": "^18.0.14",
     "babel-loader": "^8.3.0",
     "eslint": "^8.18.0",
